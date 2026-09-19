@@ -291,7 +291,6 @@ svg,
   /* 🚨 TAŞMA KALKANI: 7 uzun masaüstü linkini mobilde gizleyerek taşmayı önlüyoruz */
   /* (İleride mobil hamburger menü açılır sistemi yaparsan bu seçiciye hükmedebilirsin kanka) */
   .lrf-navbar__menu {
-    display: none;
   }
 
   /* "Başla" butonunu mobil ölçülere göre dengeliyoruz */
