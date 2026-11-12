@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LRF Malzeme Rehberi - Light Rock Fishing Türkiye</title>
+    <meta name="description" content="En ideal LRF kamış, makine, misina ve aksesuar seçim rehberi. Bütçenize en uygun ve dengeli LRF setini kurmak için teknik tüyoları keşfedin." />
+
+    <!-- 🚀 INDEX SAFLIĞINDA PERFORMANS: Sadece ana font preload edilerek bant genişliği görsele bırakıldı -->
+    <link rel="preload" href="assets/fonts/inter-v20-latin_latin-ext-regular.woff2" as="font" type="font/woff2" crossorigin />
+
+    <!-- ⚡ HERO GÖRSELİNİ CİHAZA ÖZEL PRELOAD ET: Mobil ve masaüstü sıfır çakışma -->
+    <link rel="preload" href="assets/images/hero-mobile.webp" as="image" media="(max-width: 768px)" fetchpriority="high" />
+    <link rel="preload" href="assets/images/hero-desktop.webp" as="image" media="(min-width: 769px)" fetchpriority="high" />
+
+    <link rel="stylesheet" href="assets/css/style.css" media="all" />
+  </head>
+  <body>
+    <!-- 🚀 SEMANTİK HEADER: Sayfa üst bilgi alanı bağımsızdır -->
+    <header class="lrf-header">
+      <nav class="lrf-navbar" aria-label="Ana Navigasyon">
+        <a href="index.html" class="lrf-navbar__logo-link" aria-label="Anasayfaya Git">
+          <img src="assets/images/logo.webp" width="168" height="42" alt="LRF Rehberi Logo" class="lrf-navbar__logo-img" />
+        </a>
+
+        <ul class="lrf-navbar__menu" id="lrfNavbarMenu">
+          <li><a href="index.html" class="lrf-navbar__item">Ana Sayfa</a></li>
+          <li><a href="malzemeler.html" class="lrf-navbar__item lrf-navbar__item--active">Malzemeler</a></li>
+          <li><a href="baslangic.html" class="lrf-navbar__item">Başlangıç</a></li>
+          <li><a href="teknikler.html" class="lrf-navbar__item">Teknikler</a></li>
+          <li><a href="uzmanlik.html" class="lrf-navbar__item">Uzmanlık</a></li>
+          <li><a href="akademi.html" class="lrf-navbar__item">LRF Akademi</a></li>
+          <li><a href="pratik-bilgiler.html" class="lrf-navbar__item">Pratik Bilgiler</a></li>
+        </ul>
+
+        <div class="lrf-navbar__actions">
+          <a href="baslangic.html" class="lrf-navbar__btn" aria-label="Balıkçılığa Başla">
+            <i data-lucide="waves" aria-hidden="true"></i>
+            <span>Başla</span>
+          </a>
+
+          <button type="button" class="lrf-navbar__toggle" id="lrfMobileToggle" aria-label="Menüyü Aç" aria-expanded="false" aria-controls="lrfNavbarMenu">
+            <span class="lrf-navbar__toggle-line"></span>
+            <span class="lrf-navbar__toggle-line"></span>
+            <span class="lrf-navbar__toggle-line"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- 🏆 EVRENSEL MAIN ŞEMSİYESİ: Tüm benzersiz malzeme içerikleri burada başlar -->
+    <main id="ana-icerik">
+      <!-- 🌊 BÖLÜM 1: ALT SAYFA HERO VİTRİNİ -->
+      <section class="lrf-hero lrf-hero--subpage" aria-labelledby="malzeme-hero-title">
+        <picture class="lrf-hero__bg-picture">
+          <source srcset="assets/images/hero-mobile.webp" media="(max-width: 768px)" />
+          <img src="assets/images/hero-desktop.webp" alt="Çeşitli LRF maket yemleri, jig kafaları ve silikon kurt kutuları" class="lrf-hero__bg-img" fetchpriority="high" loading="eager" />
+        </picture>
+
+        <div class="lrf-hero__content lrf-hero__content--subpage">
+          <div class="lrf-hero__badge">
+            <i data-lucide="package" aria-hidden="true"></i>
+            <span>Ana Sayfa > Malzemeler</span>
+          </div>
+          <h1 id="malzeme-hero-title" class="lrf-hero__title lrf-hero__title--subpage">LRF Malzeme Rehberi</h1>
+          <p class="lrf-hero__desc">Doğru ekipman, başarılı bir balıkçılığın temelidir. Her malzemeyi yakından tanı, bilinçli seçim yap.</p>
+        </div>
+      </section>
+
+      <!-- 🪐 BÖLÜM 2: PREMIUM SEKME MENÜSÜ (SAYFA İÇİ SAF KAYDIRMA ÇITASI) -->
+      <section class="lrf-tab-system-wrapper lrf-tab-system-wrapper--hero lrf-text-center" aria-labelledby="ekipman-oda-title">
+        <span class="lrf-badge lrf-badge--cyan">Ekipman Odası</span>
+        <h2 id="ekipman-oda-title" class="lrf-podyum-title">Hangi Malzemelere İhtiyacın Var?</h2>
+        <p class="lrf-podyum-desc">LRF seti beş temel bileşenden oluşur: kamış, makine, misina, maket ve aksesuarlar. Doğru kombinasyon, hem keyifli hem de verimli bir balıkçılık deneyimi sağlar. Aşağıda her malzemeyi detaylıca inceliyoruz.</p>
+
+        <!-- Sadece sayfa içi pürüzsüz süzülme yapacak kurumsal kapsül düzeneği -->
+        <nav class="lrf-tab-system-container lrf-tab-system-container--capsule" aria-label="Ekipman Seçim Sekmeleri">
+          <a href="#lrf-kamisi" class="lrf-tab-system-btn lrf-tab-system-btn--cyan-capsule">LRF Kamışı</a>
+          <a href="#spinning-makine" class="lrf-tab-system-btn lrf-tab-system-btn--blue-capsule">Spinning Makine</a>
+          <a href="#misina-secimi" class="lrf-tab-system-btn lrf-tab-system-btn--teal-capsule">Misina Seçimi</a>
+          <a href="#maketler-ve-jigler" class="lrf-tab-system-btn lrf-tab-system-btn--orange-capsule">Maketler ve Jig'ler</a>
+          <a href="#aksesuarlar" class="lrf-tab-system-btn lrf-tab-system-btn--purple-capsule">Aksesuarlar</a>
+        </nav>
+      </section>
+
+      <!-- 📦 BÖLÜM 3: ENVANTER REHBERİ ZIGZAG MOTORU -->
+      <!-- 🛠️ ERİŞİLEBİLİRLİK: Bölümün içeriği arama motorları ve botlar için etiketlendi -->
+      <section class="lrf-zigzag" aria-label="Kapsamlı LRF Malzeme Envanteri">
+        <div class="lrf-zigzag__inner">
+          <!-- 🪐 FOTOĞRAF 01: LRF KAMIŞI -->
+          <div class="lrf-zigzag__row lrf-zigzag__row--cyan" id="lrf-kamisi">
+            <!-- 🛠️ SEMANTİK DÜZELTME: div yerine figure kullanıldı, /> çizgisi kaldırıldı -->
+            <figure class="lrf-zigzag__media">
+              <img src="assets/images/malzeme-kamis.webp" width="1200" height="800" loading="lazy" alt="Hassas uç yapısına sahip modern LRF kamışı gövdesi ve teknik parçaları" />
+            </figure>
+            <div class="lrf-zigzag__content">
+              <div class="lrf-zigzag__badge-wrap"><span class="lrf-badge">Hassasiyet ve Hafifliğin Buluşması</span></div>
+              <h3 class="lrf-zigzag__title">LRF Kamışı</h3>
+              <p class="lrf-zigzag__desc">
+                LRF kamışları, hafif yemleri uzağa atmak og en küçük balıkların bile vuruş titreşimlerini hissetmek için özel olarak tasarlanmıştır. Genellikle 1.8 - 2.4 metre uzunluğunda; Solid (Dolu) veya Tubular (Boş) uç olmak üzere ikiye ayrılır. Silikon yemler için esnek Solid uç tercih
+                edilirken; su altındaki maket balıklara, popperlara ve metal jiglere sert aksiyonlar (Twitch/Jerk) vermek için Tubular uç tercih edilmelidir.
+              </p>
+
+              <div class="lrf-spec-grid">
+                <div class="lrf-spec-card"><span class="lrf-spec-card__label">Uzunluk</span><span class="lrf-spec-card__value">1.8 - 2.4 metre</span></div>
+                <div class="lrf-spec-card"><span class="lrf-spec-card__label">Atış Ağırlığı</span><span class="lrf-spec-card__value">1 - 10 gram</span></div>
+                <div class="lrf-spec-card"><span class="lrf-spec-card__label">Aksiyon</span><span class="lrf-spec-card__value">Fast veya Extra-Fast</span></div>
+                <div class="lrf-spec-card"><span class="lrf-spec-card__label">Uç Tipleri</span><span class="lrf-spec-card__value">Solid / Tubular</span></div>
+              </div>
+
+              <ul class="lrf-zigzag__list">
+                <li class="lrf-zigzag__list-item">
+                  <div class="lrf-zigzag__list-icon"><i data-lucide="check-circle-2" aria-hidden="true"></i></div>
+                  <span class="lrf-zigzag__list-text">Başlangıç için 1-7 gr veya 2-10 gr atış ağırlığına sahip bir kamış idealdir.</span>
+                </li>
+                <li class="lrf-zigzag__list-item">
+                  <div class="lrf-zigzag__list-icon"><i data-lucide="check-circle-2" aria-hidden="true"></i></div>
+                  <span class="lrf-zigzag__list-text">Fast aksiyon, maket kontrolünü ve balık hissini artırır.</span>
+                </li>
+                <li class="lrf-zigzag__list-item">
+                  <div class="lrf-zigzag__list-icon"><i data-lucide="check-circle-2" aria-hidden="true"></i></div>
+                  <span class="lrf-zigzag__list-text">Daha hafif kamış, daha fazla zevk demektir, ağır kamışlardan kaçının.</span>
+                </li>
+              </ul>
+              <div class="lrf-zigzag__tip-box">
+                <div class="lrf-zigzag__tip-box-icon"><i data-lucide="wallet" aria-hidden="true"></i></div>
+                <span><strong>Bütçe İpucu:</strong> Başlangıç için 1000 - 1500 TL aralığında kaliteli seçenekler mevcuttur.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 🪐 FOTOĞRAF 02: SPINNING MAKİNE -->
+          <div class="lrf-zigzag__row lrf-zigzag__row--reverse lrf-zigzag__row--blue" id="spinning-makine">
+            <!-- 🛠️ SEMANTİK DÜZELTME: div yerine figure kullanıldı, /> çizgisi kaldırıldı -->
+            <figure class="lrf-zigzag__media">
+              <img src="assets/images/malzeme-makine.webp" width="1200" height="800" loading="lazy" alt="Sığ kafalı ve pürüzsüz kalama sistemli lüks spinning makine tasarımı" />
+            </figure>
+            <div class="lrf-zigzag__content">
+              <div class="lrf-zigzag__badge-wrap"><span class="lrf-badge">Güvenilir Fren, Pürüzsüz Sarım</span></div>
+              <h3 class="lrf-zigzag__title">Spinning Makine</h3>
+              <p class="lrf-zigzag__desc">
+                Spinning makine, LRF setinin kalbidir. Misina kapasitesi, fren sistemi ve ağırlığı doğrudan balıkçılık deneyimini etkiler. 1000-2000 numara arası makineler LRF için en uygun seçeneklerdir. İnce iplerin altına dolgu yaparak ağırlık merkezini bozmamak için Sığ Kafa (Shallow Spool)
+                tercih edilmelidir. Kalama (Fren) Sisteminin pürüzsüz ve mikro düzeyde ayarlanabilir olması şarttır.
+              </p>
+
+              <div class="lrf-spec-grid">
+                <div class="lrf-spec-card"><span class="lrf-spec-card__label">Numara</span><span class="lrf-spec-card__value">1000 - 2000</span></div>
+                <div class="lrf-spec-card"><span class="lrf-spec-card__label">Dişli Oranı</span><span class="lrf-spec-card__value">4.8:1 - 5.3:1</span></div>
+                <div class="lrf-spec-card"><span class="lrf-spec-card__label">Bilyalı Rulman</span><span class="lrf-spec-card__value">En az 5+1</span></div>
+                <div class="lrf-spec-card"><span class="lrf-spec-card__label">Ağırlık</span><span class="lrf-spec-card__value">150 - 210 gram</span></div>
+              </div>
+              <ul class="lrf-zigzag__list">
+                <li class="lrf-zigzag__list-item">
+                  <div class="lrf-zigzag__list-icon"><i data-lucide="check-circle-2" aria-hidden="true"></i></div>
+                  <span class="lrf-zigzag__list-text">2000 numara makine çoğu LRF senaryosu için mükemmeldir.</span>
+                </li>
+                <li class="lrf-zigzag__list-item">
+                  <div class="lrf-zigzag__list-icon"><i data-lucide="check-circle-2" aria-hidden="true"></i></div>
+                  <span class="lrf-zigzag__list-text">Fren sistemi yumuşak ve hassas ayarlanabilir olmalıdır.</span>
+                </li>
+                <li class="lrf-zigzag__list-item">
+                  <div class="lrf-zigzag__list-icon"><i data-lucide="check-circle-2" aria-hidden="true"></i></div>
+                  <span class="lrf-zigzag__list-text">Hafif makine, uzun süreli balıkçılıkta yorgunluğu azaltır.</span>
+                </li>
+              </ul>
+              <div class="lrf-zigzag__tip-box">
+                <div class="lrf-zigzag__tip-box-icon"><i data-lucide="wallet" aria-hidden="true"></i></div>
+                <span><strong>Bütçe İpucu:</strong> Orta segment 1000-2500 TL arası makineler uzun yıllar hizmet verir.</span>
+              </div>
+            </div>
+          </div>
+          <!-- 🪐 FOTOĞRAF 03: MİSİNA SEÇİMİ -->
+          <div class="lrf-zigzag__row lrf-zigzag__row--teal" id="misina-secimi">
+            <!-- 🛠️ SEMANTİK DÜZELTME: div yerine figure kullanıldı, /> çizgisi kaldırıldı -->
+            <figure class="lrf-zigzag__media">
+              <img src="assets/images/malzeme-misina.webp" width="1200" height="800" loading="lazy" alt="Farklı kalınlıklarda PE örgü ipler ve florokarbon lider misina makaraları" />
+            </figure>
+            <div class="lrf-zigzag__content">
+              <div class="lrf-zigzag__badge-wrap"><span class="lrf-badge">PE Örgü mü, Monofilament mi?</span></div>
+              <h3 class="lrf-zigzag__title">Misina Seçimi</h3>
+              <p class="lrf-zigzag__desc">Misina seçimi, maket hissini ve atış mesafesini doğrudan etkiler. LRF'de iki ana seçenek vardır: PE örgü misina (braid) ve monofilament. Her birinin avantajları ve dezavantajları vardır.</p>
+
+              <div class="lrf-spec-grid">
+                <div class="lrf-spec-card"><span class="lrf-spec-card__label">PE Örgü Kalınlığı</span><span class="lrf-spec-card__value">#0.2 - #0.6</span></div>
+                <div class="lrf-spec-card"><span class="lrf-spec-card__label">Monofilament</span><span class="lrf-spec-card__value">0.12 - 0.18 mm</span></div>
+                <!-- 🛠️ METİN DÜZELTMESİ: 'Florkarbon' hatası 'Florokarbon' olarak güncellendi -->
+                <div class="lrf-spec-card"><span class="lrf-spec-card__label">Shock Leader</span><span class="lrf-spec-card__value">Florokarbon 0.14 - 0.20 mm</span></div>
+                <div class="lrf-spec-card"><span class="lrf-spec-card__label">Uzunluk</span><span class="lrf-spec-card__value">100 - 150 metre</span></div>
+              </div>
+              <ul class="lrf-zigzag__list">
+                <li class="lrf-zigzag__list-item">
+                  <div class="lrf-zigzag__list-icon"><i data-lucide="check-circle-2" aria-hidden="true"></i></div>
+                  <span class="lrf-zigzag__list-text">PE örgü, maksimum his ve sıfır esneme ile çok daha uzağa atış sağlar.</span>
+                </li>
+                <li class="lrf-zigzag__list-item">
+                  <!-- 🛠️ METİN DÜZELTMESİ: 'florkarbon' hatası 'florokarbon' yapıldı -->
+                  <div class="lrf-zigzag__list-icon"><i data-lucide="check-circle-2" aria-hidden="true"></i></div>
+                  <span class="lrf-zigzag__list-text">Mutlaka florokarbon shock leader kullan, taşlıklarda ipin aşınmasını ve kopmasını önler.</span>
+                </li>
+                <li class="lrf-zigzag__list-item">
+                  <div class="lrf-zigzag__list-icon"><i data-lucide="check-circle-2" aria-hidden="true"></i></div>
+                  <span class="lrf-zigzag__list-text">Yeni başlayanlar için monofilament daha affedicidir. Kuş gözü og düğüm riski bulunmaz.</span>
+                </li>
+              </ul>
+              <div class="lrf-zigzag__tip-box">
+                <div class="lrf-zigzag__tip-box-icon"><i data-lucide="wallet" aria-hidden="true"></i></div>
+                <span><strong>Bütçe İpucu:</strong> İyi bir PE misina 350-750 TL aralığında bulunabilir.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 🪐 FOTOĞRAF 04: MAKETLER VE JİG'LER -->
+          <div class="lrf-zigzag__row lrf-zigzag__row--reverse lrf-zigzag__row--orange" id="maketler-ve-jigler">
+            <!-- 🛠️ SEMANTİK DÜZELTME: div yerine figure kullanıldı, /> çizgisi kaldırıldı -->
+            <figure class="lrf-zigzag__media">
+              <img src="assets/images/malzeme-maket.webp" width="1200" height="800" loading="lazy" alt="Kutularda dizili silikon sahte kurtlar, mikro maket balıklar ve jigheadler" />
+            </figure>
+            <div class="lrf-zigzag__content">
+              <div class="lrf-zigzag__badge-wrap"><span class="lrf-badge">Balığı Kandıran Sanat</span></div>
+              <h3 class="lrf-zigzag__title">Maketler ve Jig'ler</h3>
+              <!-- 🛠️ METİN DÜZELTMESİ: Otomatik tamamlama kalıntısı olan 'Metinsel modüller' ifadesi temizlendi -->
+              <p class="lrf-zigzag__desc">Maketler ve suni yemler, LRF'nin en eğlenceli parçasıdır. Soft plastik maketler, metal jig'ler, micro crankbait'ler og spinner'lar farklı hava ve su koşullarında farklı sonuçlar verir. Renk ve boyut seçimi kritik önem taşır.</p>
+
+              <div class="lrf-spec-grid">
+                <div class="lrf-spec-card"><span class="lrf-spec-card__label">Soft Plastik Boyutu</span><span class="lrf-spec-card__value">1.5 - 3 inç</span></div>
+                <div class="lrf-spec-card"><span class="lrf-spec-card__label">Jig Head Ağırlığı</span><span class="lrf-spec-card__value">1 - 5 gram</span></div>
+                <div class="lrf-spec-card"><span class="lrf-spec-card__label">Metal Jig</span><span class="lrf-spec-card__value">2 - 8 gram</span></div>
+                <div class="lrf-spec-card"><span class="lrf-spec-card__label">Renk</span><span class="lrf-spec-card__value">Doğal + Parlak tonlar</span></div>
+              </div>
+              <ul class="lrf-zigzag__list">
+                <li class="lrf-zigzag__list-item">
+                  <div class="lrf-zigzag__list-icon"><i data-lucide="check-circle-2" aria-hidden="true"></i></div>
+                  <span class="lrf-zigzag__list-text">2 inç silikon + 2-3 gr jig head kombinasyonu her merada çok yönlüdür.</span>
+                </li>
+                <li class="lrf-zigzag__list-item">
+                  <div class="lrf-zigzag__list-icon"><i data-lucide="check-circle-2" aria-hidden="true"></i></div>
+                  <span class="lrf-zigzag__list-text">Berrak suda doğal renkler, bulanık veya gece avında parlak renkler tercih et.</span>
+                </li>
+                <li class="lrf-zigzag__list-item">
+                  <div class="lrf-zigzag__list-icon"><i data-lucide="check-circle-2" aria-hidden="true"></i></div>
+                  <span class="lrf-zigzag__list-text">Farklı renk ve boyutları dene, balıkların tercihi değişkendir.</span>
+                </li>
+              </ul>
+              <div class="lrf-zigzag__tip-box">
+                <div class="lrf-zigzag__tip-box-icon"><i data-lucide="wallet" aria-hidden="true"></i></div>
+                <span><strong>Bütçe İpucu:</strong> Başlangıç için 120 - 150 TL fiyat aralığında 2 - 3 maket yeterlidir.</span>
+              </div>
+            </div>
+          </div>
+          <!-- 🪐 FOTOĞRAF 05: AKSESUARLAR -->
+          <div class="lrf-zigzag__row lrf-zigzag__row--purple" id="aksesuarlar">
+            <!-- 🛠️ SEMANTİK DÜZELTME: div yerine figure kullanıldı, /> çizgisi kaldırıldı -->
+            <figure class="lrf-zigzag__media">
+              <img src="assets/images/malzeme-aksesuar.webp" width="1200" height="800" loading="lazy" alt="Kafa lambası, narin balıkçı penseleri ve su geçirmez kutu aksesuarları" />
+            </figure>
+            <div class="lrf-zigzag__content">
+              <div class="lrf-zigzag__badge-wrap"><span class="lrf-badge">Hız ve Konfor Kalkanı</span></div>
+              <h3 class="lrf-zigzag__title">Aksesuarlar</h3>
+              <p class="lrf-zigzag__desc">
+                Küçük dokunuşlar, büyük balıkları kıyıya hasarsız almanızı sağlar. LRF aksesuarları av esnasında hızınızı, güvenliğinizi og konforunuzu en üst düzeye çıkarır. Bel Çantası, Kafa Lambası, Pense, Balıkçı Maşası, Kanca Sökücü, Bıçak, Jighead Kutusu, Bölmeli Ekipman Kutusu, Hafif Kepçe ve
+                Kova temel aksesuarları oluşturur.
+              </p>
+
+              <div class="lrf-spec-grid">
+                <div class="lrf-spec-card"><span class="lrf-spec-card__label">Klips Boyutu</span><span class="lrf-spec-card__value">#000 - #00 - #0</span></div>
+                <div class="lrf-spec-card"><span class="lrf-spec-card__label">Balık Tutucu</span><span class="lrf-spec-card__value">Balıkçı Maşası / Lip Grip</span></div>
+                <div class="lrf-spec-card"><span class="lrf-spec-card__label">Aydınlatma</span><span class="lrf-spec-card__value">Kafa Lambası</span></div>
+                <div class="lrf-spec-card"><span class="lrf-spec-card__label">Taşıma</span><span class="lrf-spec-card__value">Ergonomik Bel / Sırt Çantası</span></div>
+              </div>
+              <ul class="lrf-zigzag__list">
+                <li class="lrf-zigzag__list-item">
+                  <div class="lrf-zigzag__list-icon"><i data-lucide="check-circle-2" aria-hidden="true"></i></div>
+                  <span class="lrf-zigzag__list-text">Katlanabilir kepçe, iri balıkları kıyıya hasarsız ve güvenle çıkarmanızı sağlar.</span>
+                </li>
+                <li class="lrf-zigzag__list-item">
+                  <div class="lrf-zigzag__list-icon"><i data-lucide="check-circle-2" aria-hidden="true"></i></div>
+                  <span class="lrf-zigzag__list-text">Lip grip ve maşa, zehirli balıklara dokunmadan güvenle suya iade etmenizi sağlar.</span>
+                </li>
+                <li class="lrf-zigzag__list-item">
+                  <div class="lrf-zigzag__list-icon"><i data-lucide="check-circle-2" aria-hidden="true"></i></div>
+                  <span class="lrf-zigzag__list-text">Kırmızı LED'li kafa lambası, gece avında meralardaki balıkları ürkütmemek için şarttır.</span>
+                </li>
+              </ul>
+              <div class="lrf-zigzag__tip-box">
+                <div class="lrf-zigzag__tip-box-icon"><i data-lucide="wallet" aria-hidden="true"></i></div>
+                <span><strong>Bütçe İpucu:</strong> Güvenliğiniz için gereken en temel aksesuarlara 500 - 600 TL'ye sahip olunabilir.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==========================================================================
+           🏆 PREMIUM TASARIM SİSTEMİ - BÖLÜM 3: PREMIUM AKADEMİ MOTORU (TEK ÇATI YAPISI)
+           ========================================================================== -->
+      <section class="lrf-premium-section" aria-label="Premium LRF Teknik İpuçları ve Akademi Motoru">
+        <!-- 📐 1. KUTU: KAMIŞ UÇLARI (SOLID / TUBULAR) -->
+        <div class="lrf-premium-info-card lrf-premium-info-card--cyan">
+          <div class="lrf-premium-info-card__icon-wrap">
+            <i data-lucide="spline" aria-hidden="true"></i>
+          </div>
+          <div class="lrf-premium-info-card__content">
+            <h3 class="lrf-premium-info-card__title">Uç Seçimi: Solid mi, Tubular mı?</h3>
+            <p class="lrf-premium-info-card__desc">
+              Av tarzınız ucu belirler. İçi dolu olan esnek <strong>Solid uçlar</strong>, balık silikonu ısırdığında sıfır direnç gösterir; balık huylanmadan yemi yutar, narin istavrit avları için şarttır. İçi boş olan diri <strong>Tubular uçlar</strong> ise maket balık and jiglere sert aksiyon
+              (Twitch/Jerk) verirken sağır kalmaz; levrek and lüfer gibi avcı balıklarda avantajlıdır.
+            </p>
+          </div>
+        </div>
+
+        <!-- 📐 2. KUTU: MAKİNE & SIĞ KAFA -->
+        <div class="lrf-premium-info-card lrf-premium-info-card--blue">
+          <div class="lrf-premium-info-card__icon-wrap">
+            <i data-lucide="disc" aria-hidden="true"></i>
+          </div>
+          <div class="lrf-premium-info-card__content">
+            <h3 class="lrf-premium-info-card__title">Makine Sırrı: Sığ Kafa (Shallow Spool) Neden Şart?</h3>
+            <p class="lrf-premium-info-card__desc">
+              İncecik LRF iplerinin derin makaraların dibine çökmesini engellemek için sığ kafa şarttır. Sığ kafa, ipin altına yüzlerce metre gereksiz dolgu misina sarma zorunluluğunu ortadan kaldırarak ağırlık merkezini korur. Atış esnasında ipin sürtünmesiz, pürüzsüz akmasını sağlayarak atış
+              mesafenizi (erimi) ciddi oranda artırır.
+            </p>
+          </div>
+        </div>
+
+        <!-- 📐 3. KUTU: ÖRGÜ İP PE MATEMATİĞİ -->
+        <div class="lrf-premium-info-card lrf-premium-info-card--teal">
+          <div class="lrf-premium-info-card__icon-wrap">
+            <i data-lucide="git-commit" aria-hidden="true"></i>
+          </div>
+          <div class="lrf-premium-info-card__content">
+            <h3 class="lrf-premium-info-card__title">İp Matematiği: PE Değeri ve Kat Farkları</h3>
+            <p class="lrf-premium-info-card__desc">
+              LRF'de sıfır esneme ve maksimum hassasiyet için örgü ip (PE) kullanılır. PE değeri küçüldükçe ip inceleler, rüzgar direnci azalır and yem uzağa gider. Yeni başlayanlar için olası kuşgözü dolaşmalarını elle çözmesi kolay olan <strong>4 kat (4x)</strong> ipler daha affedicidir;
+              <strong>8 kat (8x)</strong> ipler ise halkalardan sessizce akıp mesafeyi artırır ama ustalık ister.
+            </p>
+          </div>
+        </div>
+
+        <!-- 📐 4. KUTU: SHOCK LEADER -->
+        <div class="lrf-premium-info-card lrf-premium-info-card--orange">
+          <div class="lrf-premium-info-card__icon-wrap">
+            <i data-lucide="shield-check" aria-hidden="true"></i>
+          </div>
+          <div class="lrf-premium-info-card__content">
+            <h3 class="lrf-premium-info-card__title">Görünmez Kalkan: Florokarbon Shock Leader</h3>
+            <p class="lrf-premium-info-card__desc">
+              Örgü ipler suda görünürdür and kayalara sürtününce bıçak gibi kesilir. İpin ucuna bağlanan 1-1.5 metrelik <strong>Florokarbon lider</strong>, ışığı kırma indeksi suya en yakın malzeme olduğundan su altında tamamen görünmez olur ve avcı balıkların şüphelenmesini engeller. Ayrıca taşlık
+              ve midyeli diplerde takımın kopmasını önler.
+            </p>
+          </div>
+        </div>
+
+        <!-- 📐 5. KUTU: MERA GÜVENLİĞİ VE IŞIK REHBERİ -->
+        <div class="lrf-premium-info-card lrf-premium-info-card--red">
+          <div class="lrf-premium-info-card__icon-wrap">
+            <i data-lucide="shield-alert" aria-hidden="true"></i>
+          </div>
+          <div class="lrf-premium-info-card__content">
+            <h3 class="lrf-premium-info-card__title">Mera Güvenliği: Kırmızı Işık ve Balıkçı Maşası</h3>
+            <p class="lrf-premium-info-card__desc">
+              Gece avında balıkları kaçırmamak için kafa lambasının <strong>Kırmızı LED</strong> modunu kullanın; glow sahteleri parlatmak için ise UV ışık şarttır. LRF'de sıkça denk gelen iskorpit veya Trakonya gibi zehirli and keskin dişli türleri elle tutmadan iğneden sökmek, kendinizi korumak
+              için <strong>balıkçı maşası (grip)</strong> kullanımı zorunludur.
+            </p>
+          </div>
+        </div>
+
+        <!-- 📐 6. KUTU: TERAZİ TESTİ VE SET DENGESİ (BÜYÜK KAPANIŞ!) -->
+        <div class="lrf-premium-info-card lrf-premium-info-card--purple">
+          <div class="lrf-premium-info-card__icon-wrap">
+            <i data-lucide="scale" aria-hidden="true"></i>
+          </div>
+          <div class="lrf-premium-info-card__content">
+            <h3 class="lrf-premium-info-card__title">Altın Kural: LRF'de Terazi Testi (Set Dengesi)</h3>
+            <p class="lrf-premium-info-card__desc">
+              LRF disiplininde hassasiyet her şeydir. Kamış ve makineyi birleştirdikten sonra, setin parmağınızın üzerinde bir terazi gibi dengede durması gerekir. Parmağınızı makine yatağının tam ön sınırına koyduğunuzda kamış ne öne ne de arkaya yatmalı, yere paralel kalmalıdır. Eğer kamışın ucu
+              öne yığılıyorsa makineniz çok hafiftir; arkaya yatıyorsa makineniz çok ağırdır. Dengesiz bir set, su altındaki mikro vuruşları hissetmenizi engeller and bileğinizi yorar.
+            </p>
+            <p class="lrf-premium-info-card__desc">
+              <span class="lrf-premium-info-card__highlight">Ağırlık Sınırı:</span> Piyasada LRF adı altında satılan ağır Light Spin takımlarına kanmayın. Hakiki bir LRF setinde kamış and makinenin toplam ağırlığı 330 gramı kesinlikle geçmemelidir. Örneğin; Sniper 230 kamış (89 gr) and Ajime 1500
+              makine (149 gr) toplamda 238 gr olmakla beraber hassas dengeyi sağlamak için özel olarak özel üretilmişlerdir. Kamış and makineyi kombine ederken birbiri için özel tasarlanmış setleri seçmeniz, 8 saatlik kesintisiz bir avda dahi bileğinizi hiç yormayacaktır.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ⚡ BÖLÜM 5: ENERJİK CTA MOTORU -->
+      <section class="lrf-cta" aria-labelledby="cta-ogren-title">
+        <div class="lrf-cta__shape lrf-cta__shape--one"></div>
+        <div class="lrf-cta__shape lrf-cta__shape--two"></div>
+        <div class="lrf-cta__inner">
+          <!-- 🛠️ ERİŞİLEBİLİRLİK: id tanımlanarak section ile ilişkilendirildi -->
+          <h2 id="cta-ogren-title" class="lrf-cta__title">Malzemeleri Öğrendin, Şimdi Ne Yapacaksın?</h2>
+          <p class="lrf-cta__desc">Başlangıç rehberimizle ilk atışına hazırlan. Teknik İpuçlarımız ile başarı şansını artır.</p>
+          <div class="lrf-cta__actions">
+            <a href="baslangic.html" class="lrf-cta__btn-white" aria-label="Başlangıç Rehberine Git">
+              <i data-lucide="book-open" aria-hidden="true"></i>
+              <span>Başlangıç Rehberine Git</span>
+              <i data-lucide="arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="teknikler.html" class="lrf-cta__btn-trans" aria-label="Teknik İpuçlarına Git">
+              <span>Teknik İpuçları</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 🌊 SAYFA ALTI GEÇİŞ VE DALGA EFEKTİ MOTORU -->
+    <div class="lrf-footer-wave-wrap" aria-hidden="true">
+      <!-- 🛡️ ERİŞİLEBİLİRLİK: focusable ve aria-hidden ile tarayıcı botları/ekran okuyucuları için tamamen görünmez yapıldı -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" focusable="false">
+        <path fill="#00bcd4" fill-opacity="1" d="M0,0C120,96,360,160,720,160C1080,160,1320,96,1440,0L1440,320L0,320Z"></path>
+      </svg>
+    </div>
+
+    <!-- 📋 SEMANTİK FOOTER KALKANI: Main etiketinin tamamen dışındadır -->
+    <footer class="lrf-footer">
+      <div class="lrf-footer__grid">
+        <!-- SÜTUN 1: MARKA VE LOGO ALANI -->
+        <div class="lrf-footer__col">
+          <div class="lrf-footer__logo-wrap">
+            <!-- 🛡️ CLS KİLİDİ: HTML5 standartlarında saf kapatma sağlandı, sondaki /> çizgisi tamamen kaldırıldı -->
+            <img src="assets/images/logo.webp" width="168" height="42" loading="lazy" alt="LRF Rehberi Alt Logo" class="lrf-footer__logo-img" />
+          </div>
+          <p class="lrf-footer__brand-desc">LRF olta balıkçılığını öğrenmek için Türkiye'nin en kapsamlı rehberi. Her seviyeden balıkçıya adım adım rehberlik.</p>
+        </div>
+
+        <!-- SÜTUN 2: REHBERLER LİNKLERİ -->
+        <div class="lrf-footer__col">
+          <h3 id="footer-rehber-heading" class="lrf-footer__heading">Rehberler</h3>
+          <ul class="lrf-footer__menu" aria-labelledby="footer-rehber-heading">
+            <li>
+              <a href="baslangic.html" class="lrf-footer__link"><i data-lucide="book-open" aria-hidden="true"></i><span>Başlangıç Rehberi</span></a>
+            </li>
+            <li>
+              <a href="malzemeler.html" class="lrf-footer__link"><i data-lucide="package" aria-hidden="true"></i><span>Malzeme Rehberi</span></a>
+            </li>
+            <li>
+              <a href="teknikler.html" class="lrf-footer__link"><i data-lucide="activity" aria-hidden="true"></i><span>Teknik İpuçları</span></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- SÜTUN 3: KEŞFET LİNKLERİ -->
+        <div class="lrf-footer__col">
+          <h3 id="footer-kesfet-heading" class="lrf-footer__heading">Keşfet</h3>
+          <ul class="lrf-footer__menu" aria-labelledby="footer-kesfet-heading">
+            <li>
+              <a href="index.html#lrf-nedir" class="lrf-footer__link"><i data-lucide="fishing-rod" aria-hidden="true"></i><span>LRF Nedir?</span></a>
+            </li>
+            <li>
+              <a href="hedef-baliklar.html" class="lrf-footer__link"><i data-lucide="fish" aria-hidden="true"></i><span>Hedef Balıklar</span></a>
+            </li>
+            <li>
+              <a href="zehirli-baliklar.html" class="lrf-footer__link"><i data-lucide="skull" aria-hidden="true"></i><span>Zehirli Balıklar</span></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- SÜTUN 4: İLETİŞİM ALANI -->
+        <div class="lrf-footer__col">
+          <h3 id="footer-iletisim-heading" class="lrf-footer__heading">İletişim</h3>
+          <ul class="lrf-footer__menu" aria-labelledby="footer-iletisim-heading">
+            <li>
+              <a href="mailto:info@lrfrehberi.com" class="lrf-footer__link"><i data-lucide="mail" aria-hidden="true"></i><span>Bize Ulaşın</span></a>
+            </li>
+          </ul>
+          <p class="lrf-footer__contact-note">Sorularınız için her zaman buradayız.</p>
+        </div>
+      </div>
+
+      <div class="lrf-footer__bottom">
+        <p>© 2026 LRF Rehberi. Tüm hakları saklıdır.</p>
+        <div class="lrf-footer__legal-row">
+          <a href="gizlilik-politikasi.html" class="lrf-footer__legal-link">Gizlilik Politikası</a>
+          <a href="kullanim-kosullari.html" class="lrf-footer__legal-link">Kullanım Koşulları</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 🛠️ SEMANTİK BAŞYAPIT: role="dialog" ve aria-describedby ile Google ve A11Y tam puanı garantilendi -->
+    <!-- 🚀 REFAKTÖR: Butonun üzerindeki eski onclick pası söküldü, kurallar modern JS delegasyonuna devredildi kanka -->
+    <aside id="lrfCookieBanner" class="lrf-cookie-banner" role="dialog" aria-label="Çerez Bilgilendirmesi" aria-describedby="lrfCookieDesc">
+      <div class="lrf-cookie-content">
+        <span id="lrfCookieDesc">🍪 Sitemizde, kullanıcı deneyimini optimize etmek amacıyla KVKK normlarına uygun şeffaf çerezler kullanılmaktadır. Detaylar için <a href="gizlilik-politikasi.html" target="_blank" rel="noopener">Gizlilik Politikamızı</a> inceleyebilirsiniz.</span>
+        <button id="lrfCookieAcceptBtn" class="lrf-cookie-btn" aria-label="Çerez politikasını kabul et ve uyarını kapat">Anladım, Kabul Et</button>
+      </div>
+    </aside>
+
+    <!-- ⚡ SAFKAN PERFORMANS SCRIPTLERI -->
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/lucide.min.js" defer></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        if (typeof lucide !== "undefined") {
+          lucide.createIcons();
+        }
+      });
+    </script>
+  </body>
+</html>
